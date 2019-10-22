@@ -12,7 +12,7 @@ export class HomePage {
   coches: any;
   
   constructor(private httpClient: HttpClient) {
-    this.coches = this.httpClient.get('https://api.myjson.com/bins/aknmy').pipe(map(res => res['results']));
+    this.coches = this.httpClient.get('https://api.myjson.com/bins/15bm6o').pipe(map(res => res['results']));
   }
  
 }
