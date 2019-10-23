@@ -1,15 +1,24 @@
 ion-toolbar {
 
     color: white;
-    --ion-background-color: black;
+    --ion-background-color: #03a9f4;
 
+}
+
+ion-content {
+    --ion-background-color: #b3e5fc;
 }
 
 .modelo {
 
     color: white;
-    --ion-background-color: black;
+    --ion-background-color: #03a9f4;
     --ion-font-family: "Helvetica Neue";
 
 }
+
+h2 {
+    margin-top: 11px;
+}
+
 

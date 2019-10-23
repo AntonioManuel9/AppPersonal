@@ -1,5 +1,7 @@
 {
   "name": "AppPersonal",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
