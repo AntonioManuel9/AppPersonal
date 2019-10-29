@@ -5,8 +5,12 @@ ion-toolbar {
 
 }
 
-ion-content {
-    --ion-background-color: #b3e5fc;
+ion-grid {
+    background-color: #b3e5fc;
+}
+
+ion-card-content{
+    background-color: white;
 }
 
 .modelo {
