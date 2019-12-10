@@ -1,15 +1,19 @@
 <ion-header id = "titulo">
   <ion-toolbar>
     <ion-title>
-        <i>Aplicación Personal Vehículos</i>
+        {{cabeceraProyecto}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
  
 <ion-content>
+  <ion-item class="buscador">
+      <ion-input [(ngModel)]="buscar" placeholder="Escribe aquí"></ion-input><ion-icon name="search"></ion-icon>
+  </ion-item>
   <ion-grid>
     <ion-row>
       <ion-col *ngFor = "let coche of coches | async" size-xs = "12" size-sm = "6" size-md = "4" size-lg = "4" size-xl = "3" >
+          <ion-card *ngIf="coche.Marca==buscar || coche.Pais==buscar || coche.Fec==buscar || coche.NumBastidor==buscar ">
         <ion-card>
           <ion-item class = "modelo">
             <h2>{{ coche.Modelo }}</h2>&nbsp;&nbsp;&nbsp;<ion-icon name = "logo-model-s" color = "white"></ion-icon>
@@ -30,6 +34,7 @@
                   </ion-item>
                 </ion-list>
           </ion-card-content>
+          </ion-card>
         </ion-card>
       </ion-col>
     </ion-row>
